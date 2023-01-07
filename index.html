@@ -113,7 +113,47 @@
 
     <!-- Contact -->
     <section id="contact" class="contact">
-        <div class="contact__inner"></div>
+        <div class="contact__inner">
+
+            <!-- Contact Card -->
+            <div class="contact-card">
+                <h2 class="contact-card__title">Kontakt & Öppettider</h2>
+                <p class="contact-card__text">
+                    Måndag - Torsdag 11-22<br>
+                    Fredag & lördag 11- 01<br>
+                    Söndag 17 - 22
+                </p>
+                <p class="contact-card__text">
+                    <strong>Restaurang Bearlissimo</strong><br>
+                    Kungsgatan 7<br>
+                    70214 Örebro
+                </p>
+                <p class="contact-card__text">
+                    019-112142<br>
+                    info@bearlissmo.se
+                </p>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <h2 class="contact-form__title">Boka bord</h2>
+                <form action="" class="contact-form__form">
+                    <input type="text" name="name" id="" placeholder="Namn:*" required>
+                    <div class="contact-form__row">
+                        <input type="number" name="number-of-persons" placeholder="Antal personer:*" min="1" max="20" required>
+                        <input type="datetime-local" name="datetime" id="" placeholder="Dag & Tid:*" required>  
+                    </div>
+                    <div class="contact-form__row">  
+                        <input type="tel" name="phone" id="" placeholder="Telefon:*" required>
+                        <input type="email" name="email" id="" placeholder="Epost:*" required>
+                    </div>
+                    <textarea name="" id="" cols="30" rows="3" placeholder="Övriga upplysning"></textarea>
+                    <button type="submit">Skicka förfrågan</button>
+                </form>
+            </div>
+
+
+        </div>
     </section>
 
     <!-- Footer -->
