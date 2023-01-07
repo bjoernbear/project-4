@@ -14,6 +14,14 @@
     }
 }
 
+@mixin separator-dots() {
+    &::after {
+        content: url('assets/icons/icon-divider.svg');
+        display: block;
+        margin-top: var(--gap-s);
+    }
+}
+
 @mixin frame($color: var(--color-accent), $margin: 12px) {
     position: relative;
 
