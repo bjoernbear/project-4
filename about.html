@@ -15,7 +15,7 @@
 <div class="container">
 
     <!-- Site Header -->
-    <header class="site-header">
+    <header class="site-header site-header--page">
         <a href="index.html" class="site-header__branding">
             <img src="assets/images/logo.svg" alt="Bearlissimo Logo">
         </a>
@@ -50,97 +50,37 @@
         </div>
     </nav>
 
-    <!-- Hero -->
-    <section class="hero">
-        <div class="hero__content">
-            <figure class="hero__branding">
-                <img src="assets/images/logo.svg" alt="Bearlissimo Logo">
-            </figure>
-        </div>
-    </section>
+    <!-- Page -->
+    <main class="page">
 
-    <!-- About -->
-    <section class="about">
-        <div class="about__inner">
+        <div class="page__inner">
 
-            <article class="about__content">
-                <header class="about__header">
-                    <h2 class="about__title">En italiensk pärla med en twist i centrala Örebro</h2>
+            <article class="post post-type--page">
+                
+                <header class="post__header">
+                    <h1 class="post__title">Om oss</h1>
                 </header>
-                <div class="about__excerpt">
-                    <p>Suspendisse pretium sagittis elit, sit amet malesuada ante dignissim id. Nulla sed leo lorem. Sed malesuada blandit ipsum, sed congue neque. Praesent ut dapibus diam. Proin molestie risus vitae metus sodales, ut luctus leo tincidunt. Nulla et elit id mauris porta interdum sit amet at urna. Sed pharetra scelerisque lacus, ut molestie arcu varius et.</p>
+
+                <div class="post__content">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, a excepturi ipsa vel qui, numquam voluptatum dolor adipisci dolores sed natus labore nesciunt officia delectus eligendi blanditiis quaerat debitis accusantium!
+                    Iusto laborum corporis, assumenda nihil facere illum non nobis harum veritatis impedit cumque, voluptas magni aspernatur ratione ut velit rem sit voluptates ad explicabo debitis atque aut? Fugiat, voluptatum accusamus!
+                    Enim iste, vero facere unde corrupti voluptates odio reprehenderit libero quas praesentium. Ullam excepturi consequatur architecto dolorem, reprehenderit nam atque ad officia repellat inventore ipsum dolores? Earum voluptatem nostrum aperiam!
+                    Minima aliquam porro, iusto dolor voluptas quae voluptatum doloribus tempore placeat temporibus tenetur voluptates sint corrupti. Magni saepe explicabo doloribus deserunt nobis nihil dignissimos? Saepe minus quidem ipsam cum fugit.
+                    Voluptates consequatur vel iste autem atque aspernatur fuga. Minima ab ipsa maiores doloremque repellat atque aliquam corporis ea eaque enim iure cupiditate exercitationem consequatur minus quos, sequi placeat. Porro, voluptatum?</p>
                 </div>
-                <footer class="about__footer">
-                    <div class="about__buttons">
-                        <a href="#contact" class="about__button">Boka bord</a>
-                        <a href="#food-menu" class="about__button">Vår meny</a>
-                    </div>
+
+                <footer class="post__footer">
+
                 </footer>
+
             </article>
 
-            <!-- About image -->
-            <figure class="about__image">
-                <img src="assets/images/Image 3@2x.jpg" alt="">
-                <div class="black-box"></div>
-            </figure>
-
         </div>
-    </section>
 
-    <!-- Food menu -->
-    <section id="food-menu" class="food-menu">
-        <div class="food-menu__inner">
-
-            <div class="food-menu__content">
-
-                <header class="food-menu__header">
-                    <h2 class="food-menu__title">En avsmakningsmeny i höstens färger</h2>
-                </header>
-
-                <div class="food-menu__courses">
-                    <p>Suspendisse pretium sagittis elit, sit amet malesuada ante dignissim id. Nulla sed leo lorem. Sed malesuada blandit ipsum, sed congue neque.</p>
-                
-                    <p class="food-menu__course">
-                        Suspendisse pretium sagittis elit, sit amet malesuada ante dignissim id. Nulla sed leo lorem.
-                    </p>
-                
-                    <p class="food-menu__course">
-                        Nulla sed leo lorem. Sed malesuada blandit ipsum, sed congue neque.
-                    </p>
-                
-                    <p class="food-menu__course">
-                        Malesuada ante dignissim id. Nulla sed leo lorem. Sed malesuada blandit ipsum, sed congue neque.
-                    </p>
-                
-                    <p class="food-menu__course">
-                        Amet malesuada ante dignissim id. Nulla sed leo lorem. Sed malesuada blandit ipsum.
-                    </p>
-
-                    <p>Suspendisse pretium sagittis elit, sit amet malesuada</p>
-                </div>
-
-                <footer class="food-menu__footer">
-                    <a href="#contact" class="food-menu__button">Boka bord</a>
-                </footer>
-
-            </div>
-
-        </div>
-    </section>
-
-    <!-- Gallery -->
-    <section class="gallery">
-        <div class="gallery__inner">
-
-            <figure class="gallery__item"><img src="assets/images/Image 4@2x.jpg" alt=""></figure>
-            <figure class="gallery__item"><img src="assets/images/Image 1@2x.jpg" alt=""></figure>
-            <figure class="gallery__item"><img src="assets/images/Image 2@2x.jpg" alt=""></figure>
-
-        </div>
-    </section>
+    </main>
 
     <!-- Contact -->
-    <section id="contact" class="contact">
+    <section id="contact" class="contact contact--page">
         <div class="contact__inner">
 
             <!-- Contact Card -->
@@ -160,24 +100,6 @@
                     019-112142<br>
                     info@bearlissmo.se
                 </p>
-            </div>
-
-            <!-- Contact Form -->
-            <div class="contact-form">
-                <h2 class="contact-form__title">Boka bord</h2>
-                <form action="" class="contact-form__form">
-                    <input type="text" name="name" id="" placeholder="Namn:*" required>
-                    <div class="contact-form__row">
-                        <input type="number" name="number-of-persons" placeholder="Antal personer:*" min="1" max="20" required>
-                        <input type="datetime-local" name="datetime" id="" placeholder="Dag & Tid:*" required>  
-                    </div>
-                    <div class="contact-form__row">  
-                        <input type="tel" name="phone" id="" placeholder="Telefon:*" required>
-                        <input type="email" name="email" id="" placeholder="Epost:*" required>
-                    </div>
-                    <textarea name="" id="" cols="30" rows="3" placeholder="Övriga upplysning"></textarea>
-                    <button type="submit">Skicka förfrågan</button>
-                </form>
             </div>
 
 
